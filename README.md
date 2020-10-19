@@ -7,7 +7,7 @@
 
 - Project > TARGETS > Info, the link that you will add hear you find it in the **GoogleService-Info.plist** under the name ```REVERSED_CLIENT_ID```  
 
-![alt text](https://github.com/Zeglaty/Connectivity/blob/master/README%20Photos/Screen%20Shot%202020-10-19%20at%2012.47.47%20PM.png)
+![alt text](https://github.com/Zeglaty/Connectivity/blob/master/README%20Photos/Screen%20Shot%202020-10-19%20at%2012.47.59%20PM.png)
 
 - Add **NotificationController** file
 - setup **AppDelegate** as in the example file
