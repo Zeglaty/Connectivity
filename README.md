@@ -1,3 +1,4 @@
+# Basic Setup Guideline
 - Setup you fire base ios App / download and add the **GoogleService-Info.plist** 
 - Fire base Console : setup cloud messaging  [ upload .p8 file , team ID , key] that you will get from the Apple App connect when registering for APNs
 - Create an app on the app-store-connect make sure to connect it to the same Bundle Identifier
