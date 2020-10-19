@@ -135,10 +135,10 @@ extension NotificationsController: UNUserNotificationCenterDelegate {
 
 
         //- navegating to a screen
-        
+
         // retrieve the root view controller (which is a tab bar controller)
         if #available(iOS 13.0, *) {
-            
+
             guard let rootViewController = (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.window?.rootViewController else {
                 return
             }
@@ -169,7 +169,7 @@ extension NotificationsController: UNUserNotificationCenterDelegate {
 
         } else {
             // Fallback on earlier versions
-            
+
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
                 let vc = storyboard.instantiateViewController(withIdentifier: "ViewController") as? ViewController
                 self.window?.rootViewController = vc

@@ -55,6 +55,40 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 
 
+// MARK: - Messaging
+extension AppDelegate: MessagingDelegate {
+  // 1 - FCM tokens are always provided here.
+  // 2 - It is called generally during app start, but may be called more than once
+  // 3 - if the token is invalidated or updated. This is the right spot to upload this
+  // token to your application server, or to subscribe to any topics.
+  func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String) {
+    if let token = Messaging.messaging().fcmToken {
+      print("FCM Token: \(token)")
+    } else {
+      print("FCM Token: nil")
+    }
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// most likely you will not use these method
 // MARK: - User Notifications
 extension AppDelegate: UNUserNotificationCenterDelegate{
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
@@ -97,22 +131,6 @@ extension AppDelegate: UNUserNotificationCenterDelegate{
 
 
 
-// MARK: - Messaging
-extension AppDelegate: MessagingDelegate {
-  // 1 - FCM tokens are always provided here.
-  // 2 - It is called generally during app start, but may be called more than once
-  // 3 - if the token is invalidated or updated. This is the right spot to upload this
-  // token to your application server, or to subscribe to any topics.
-  func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String) {
-    if let token = Messaging.messaging().fcmToken {
-      print("FCM Token: \(token)")
-    } else {
-      print("FCM Token: nil")
-    }
-  }
-
-
-}
 
 //// Firebase DirectMessages ( that are not connected throw the APNs )
 //// this method will notifiy you when you have a connection with this service
