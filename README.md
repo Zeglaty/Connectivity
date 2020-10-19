@@ -3,11 +3,11 @@
 - Create an app on the app-store-connect make sure to connect it to the same Bundle Identifier
 - Project > TARGETS > Signing & Capabilities > add [backGround Mode (background fetch , remote notifications ) ] 
 
-![Screen Shot 2020-10-19 at 12.47.47 PM](/Users/abdalmagidnew/Desktop/Projects/Components/Project/FireBaseConnectivity/README Photos/Screen Shot 2020-10-19 at 12.47.47 PM.png)
+![alt text](https://github.com/Zeglaty/Connectivity/blob/master/README%20Photos/Screen%20Shot%202020-10-19%20at%2012.47.47%20PM.png)
 
 - Project > TARGETS > Info, the link that you will add hear you find it in the **GoogleService-Info.plist** under the name ```REVERSED_CLIENT_ID```  
 
-![Screen Shot 2020-10-19 at 12.47.59 PM](/Users/abdalmagidnew/Desktop/Projects/Components/Project/FireBaseConnectivity/README Photos/Screen Shot 2020-10-19 at 12.47.59 PM.png)
+![alt text](https://github.com/Zeglaty/Connectivity/blob/master/README%20Photos/Screen%20Shot%202020-10-19%20at%2012.47.47%20PM.png)
 
 - Add **NotificationController** file
 - setup **AppDelegate** as in the example file
